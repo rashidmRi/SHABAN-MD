@@ -1,7 +1,7 @@
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
-function convertToBool(text, fault = 'true') {
+function convertToBool(text, fault = 'false') {
     return text === fault ? true : false;
 }
 module.exports = {
